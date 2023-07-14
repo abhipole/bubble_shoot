@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="border">
+      <h3>Shot The Circle</h3>
+      <center>
+        <p>Test your skill. How many boxes can you check in 30 seconds?</p>
+      </center>
+      <div class="features">
+        <button id="startBtn">Start Game | Stop Game</button>
+        <div class="output">
+          Time:
+          <div class="input" id="time"></div>
+        </div>
+      </div>
+      <div class="features">
+        <div id="push">
+          <input type="number" placeholder="Change game time (sec)" id="changeGameTimeInput" />
+          <button id="saveGameTimeButton" type="button">Save Time</button>
+        </div>
+        <div class="output">
+          Score:
+          <div class="input" id="score"></div>
+        </div>
+      </div>
+      <hr width="80%">
+      <div id="radiocontainer"></div>
+      <hr width="80%">
+      <div id="restartResetButtons">
+        <a id="restartgamehref"><button id="restart">Restart the game</button></a>
+        <a id="resetgamehref"><button id="reset">Reset the game</button></a>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
+
